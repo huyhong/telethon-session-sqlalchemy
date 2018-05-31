@@ -15,7 +15,7 @@ LATEST_VERSION = 2
 
 
 class AlchemySessionContainer:
-    def __init__(self, engine=None, session=None, table_prefix="telethon",
+    def __init__(self, engine=None, session=None, table_prefix="telethon_",
                  table_base=None, manage_tables=True):
         if isinstance(engine, str):
             engine = sql.create_engine(engine)
